@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Immerce Team
+ * @package Csp Magenton
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Immerce_Csp" setup_version="1.0.2">
+    	<sequence>
+            <module name="Magento_CatalogSearch"/>
+            <module name="Magento_Csp"/>
+        </sequence>
+    </module>
+</config>
+

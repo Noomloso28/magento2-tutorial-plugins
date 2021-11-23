@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<csp_whitelist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Csp/etc/csp_whitelist.xsd">
+    <policies>
+        <!--policy id="connect-src">
+            <values>
+                <value id="data" type="host">data:</value>
+                <value id="paypal" type="host">*.paypal.com</value>
+                <value id="jbstaging" type="host">*.jbstaging.de</value>
+            </values>
+        </policy>
+        <policy id="script-src">
+            <values>
+                <value id="data" type="host">data:</value>
+                <value id="jbstaging.de.cms.home" type="host">http://lucullus.jbstaging.de/cms/home/</value>
+            </values>
+        </policy>
+
+        <policy id="frame-src">
+            <values>
+                <value id="data" type="host">data:</value>
+                <value id="frame.jbstaging.de.cms.home" type="host">*.jbstaging.de/cms/home/</value>
+                <value id="jbstaging.de" type="host">*.jbstaging.de</value>
+            </values>
+        </policy-->
+        <policy id="connect-src">
+            <values>
+                <value id="googleadservices.com" type="host">http://www.googleadservices.com</value>
+                <value id="google-analytics.com" type="host">http://www.google-analytics.com</value>
+                <value id="typekit.net" type="host">https://typekit.net</value>
+                <value id="cloudflare.com" type="host">https://bootstrapcdn.com</value>
+
+                <!--CDN-->
+                <value id="cloudflare" type="host">*.cloudflare.com</value>
+
+                <!--Payments-->
+                <value id="paypal" type="host">*.paypal.com</value>
+
+
+            </values>
+        </policy>
+        <policy id="script-src">
+            <values>
+                <value id="lucullus.script" type="host">http://lucullus.jbstaging.de/</value>
+                <value id="paypal.com.script" type="host">https://www.paypal.com</value>
+                <value id="googleadservices.com.script" type="host">http://www.googleadservices.com</value>
+
+                <!--CDN-->
+                <value id="cloudflare" type="host">*.cloudflare.com</value>
+
+                <!--Google-->
+                <value id="google-analytics" type="host">www.google-analytics.com</value>
+
+                <!--Functions-->
+                <value id="trustedshops" type="host">*.trustedshops.com</value>
+                <value id="usercentrics" type="host">*.usercentrics.eu</value>
+
+            </values>
+        </policy>
+
+
+        <policy id="frame-src">
+            <values>
+
+                <value id="jbstaging.de" type="host">lucullus.jbstaging.de/</value>
+                <value id="lucullus.connect" type="host">http://lucullus.jbstaging.de/</value>
+            </values>
+        </policy>
+
+        <policy id="style-src">
+            <values>
+                <!--CDN-->
+                <value id="cloudflare" type="host">*.cloudflare.com</value>
+
+                <!--Design-->
+                <value id="typekit" type="host">*.typekit.net</value>
+
+                <!--Functions-->
+                <value id="trustedshops" type="host">*.trustedshops.com</value>
+                <value id="usercentrics" type="host">*.usercentrics.eu</value>
+            </values>
+        </policy>
+
+        <policy id="font-src">
+            <values>
+
+                <value id="cloudflare" type="host">*.bootstrapcdn.com</value>
+                <!--CDN-->
+                <value id="cloudflare.com" type="host">*.cloudflare.com</value>
+
+                <!--Design-->
+                <value id="typekit" type="host">*.typekit.net</value>
+
+                <!--Functions-->
+                <value id="trustedshops" type="host">*.trustedshops.com</value>
+            </values>
+        </policy>
+
+        <policy id="img-src">
+            <values>
+                <!--CDN-->
+                <value id="cloudflare" type="host">*.cloudflare.com</value>
+                <value id="klarna-base" type="host">https://cdn.klarna.com</value>
+
+                <!--Payments-->
+                <value id="paypal" type="host">*.paypal.com</value>
+            </values>
+        </policy>
+
+    </policies>
+</csp_whitelist>
